@@ -24,7 +24,7 @@ public class Clock extends AppCompatActivity {
             super(context);
         }
 
-        //after doing all this I realize I could probable write each of the seconds, minutes, and hours sections into their own sections,
+        //after doing all this I realize I could probable write each of the seconds, minutes, and hours sections into their own functions,
         // but it's working so I'll leave it.
         @Override
         protected void onDraw(Canvas canvas){
@@ -123,7 +123,7 @@ public class Clock extends AppCompatActivity {
             canvas.drawCircle(hourX,hourY,(0.25f*fullHourRadius),paint);
             //draw current hour and set transparency
 
-            paint.setAlpha(127);
+            paint.setAlpha(100);
             float radiusHour;
             if(hour <= 12.0f){//AM
                 paint.setColor(0xff5d9ccc);
